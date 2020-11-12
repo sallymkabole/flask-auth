@@ -1,27 +1,40 @@
-{% block title %}Login{% endblock %}
+{% block title %}{% endblock %}
 {% block body %}
-<form action="/action_page.php" style="border:1px solid #ccc">
+<form method="POST" style="border:1px solid #ccc">
     <div class="container">
-      <h1>Sign Up :Please fill in this form to create an account.</h1>
-            <hr>
-  
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
-  
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-  
-      <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-      
-    
-      <div class="clearfix">
+        <h1>Sign Up :Please fill in this form to create an account.</h1>
+        <hr>
+
+
+        <label for="fullname"><b>Full Name</b></label>
+        
+        
+        </br>
+        <input type="text" placeholder="Enter Your Full Name" name="fullname" required>
     </br>
-        <button type="button" class="cancelbtn">Cancel</button>
-        <button type="submit" class="signupbtn">Sign Up</button>
-      
-    
-</div>
+    <label for="username"><b>User Name</b></label>
+</br> 
+    <input type="text" placeholder="Enter Your Username" name="username" required>
+  
+    </br>
+        <label for="email"><b>Email</b></label>
+        </br>
+        <input type="text" placeholder="Enter Email" name="email" required>
+        </br>
+
+        <label for="password"><b>Password</b></label>
+        </br>
+        <input type="password" placeholder="Enter Password" name="password" required>
+
+
+
+        <div class="clearfix">
+            </br>
+            <button type="button" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+
+
+        </div>
     </div>
-  </form>
+</form>
 {% endblock %}

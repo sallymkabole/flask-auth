@@ -1,0 +1,13 @@
+{% block title %}{% endblock %}
+{% block body %}
+<div class="container">
+            <h1 class="logo">Welcome {{username}}</h1>
+            <strong>
+               <nav>
+                  <ul class="menu">
+                     <li><a href="{{ url_for('logout') }}">LogOut</a></li>
+                  </ul>
+               </nav>
+            </strong>
+         </div>
+         {% endblock %}
